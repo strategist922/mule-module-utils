@@ -1,5 +1,5 @@
 /**
- * Mule Sabrix Cloud Connector
+ * Mule Modules Utils
  *
  * Copyright (c) MuleSoft, Inc.  All rights reserved.  http://www.mulesoft.com
  *
