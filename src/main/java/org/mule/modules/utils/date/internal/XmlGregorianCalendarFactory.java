@@ -8,7 +8,7 @@
  * LICENSE.txt file.
  */
 
-package org.mule.modules.utils.date.converter.internal;
+package org.mule.modules.utils.date.internal;
 
 import java.util.Date;
 import java.util.GregorianCalendar;

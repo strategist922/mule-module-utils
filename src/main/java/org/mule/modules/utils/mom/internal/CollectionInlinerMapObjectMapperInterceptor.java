@@ -26,7 +26,7 @@ import org.apache.commons.lang.StringUtils;
  *
  * @author flbulgarelli
  */
-public class CollectionInliner implements MapObjectMapperInterceptor
+public class CollectionInlinerMapObjectMapperInterceptor implements MapObjectMapperInterceptor
 {
     @Override
     public Object unmap(final Object value, final Class<?> type, Applicable2<Object, Class<?>, Object> proceed)

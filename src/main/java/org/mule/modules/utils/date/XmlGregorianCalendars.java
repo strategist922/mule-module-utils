@@ -14,7 +14,7 @@ import java.util.Date;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import org.mule.modules.utils.date.converter.internal.XmlGregorianCalendarFactory;
+import org.mule.modules.utils.date.internal.XmlGregorianCalendarFactory;
 
 /**
  * @author Gaston Ponti
