@@ -8,7 +8,9 @@
  * LICENSE.txt file.
  */
 
-package org.mule.modules.utils;
+package org.mule.modules.utils.mom;
+
+import org.mule.modules.utils.date.DateConventions;
 
 import ar.com.zauber.commons.mom.MapObjectMapperBuilder;
 import ar.com.zauber.commons.mom.MapObjectMappers;

@@ -8,7 +8,7 @@
  * LICENSE.txt file.
  */
 
-package org.mule.modules.util.internal;
+package org.mule.modules.utils.mom.internal;
 
 import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
 

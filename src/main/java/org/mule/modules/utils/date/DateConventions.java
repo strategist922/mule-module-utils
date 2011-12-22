@@ -9,7 +9,7 @@
  */
 
 
-package org.mule.modules.utils;
+package org.mule.modules.utils.date;
 
 import org.joda.time.format.DateTimeFormatter;
 import org.joda.time.format.ISODateTimeFormat;

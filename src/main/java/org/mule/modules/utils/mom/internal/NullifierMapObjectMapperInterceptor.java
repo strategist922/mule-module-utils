@@ -8,12 +8,11 @@
  * LICENSE.txt file.
  */
 
-package org.mule.modules.utils.internal;
-
-import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
+package org.mule.modules.utils.mom.internal;
 
 import net.sf.staccatocommons.defs.Applicable;
 import net.sf.staccatocommons.defs.Applicable2;
+import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
 
 public final class NullifierMapObjectMapperInterceptor implements MapObjectMapperInterceptor
 {
@@ -33,6 +32,6 @@ public final class NullifierMapObjectMapperInterceptor implements MapObjectMappe
     public Object map(Object value, Applicable<Object, Object> proceed)
     {
         return proceed.apply(value);
-    }
+    }   
 }
 
