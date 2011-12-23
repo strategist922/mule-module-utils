@@ -8,8 +8,8 @@
   <properties>
     <mom.version>1.2.2</mom.version>
   </properties>
-   
-   <scm>
+
+  <scm>
     <connection>scm:git:git://github.com:mulesoft/mule-module-utils.git</connection>
     <developerConnection>scm:git:git@github.com:mulesoft/mule-module-utils.git</developerConnection>
     <url>http://github.com/mulesoft/mule-module-utils</url>
@@ -54,6 +54,15 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <pushChanges>false</pushChanges>
+        </configuration>
+        <version>2.1</version>
+      </plugin>
     </plugins>
   </build>
 
@@ -77,19 +86,19 @@
     </dependency>
   </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>mulesoft-releases</id>
-            <name>MuleSoft Repository</name>
-            <url>https://repository.mulesoft.org/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>mulesoft-snapshots</id>
-            <name>MuleSoft Snapshot Repository</name>
-            <url>https://repository.mulesoft.org/snapshots/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>mulesoft-releases</id>
+      <name>MuleSoft Repository</name>
+      <url>https://repository.mulesoft.org/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>mulesoft-snapshots</id>
+      <name>MuleSoft Snapshot Repository</name>
+      <url>https://repository.mulesoft.org/snapshots/</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
 
 
 </project>
