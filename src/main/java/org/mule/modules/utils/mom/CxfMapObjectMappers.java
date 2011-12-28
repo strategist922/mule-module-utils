@@ -12,6 +12,7 @@ package org.mule.modules.utils.mom;
 
 import org.mule.modules.utils.date.DateConventions;
 
+import ar.com.zauber.commons.mom.MapObjectMapper;
 import ar.com.zauber.commons.mom.MapObjectMapperBuilder;
 import ar.com.zauber.commons.mom.MapObjectMappers;
 import ar.com.zauber.commons.mom.converter.TypeConverter;
@@ -60,6 +61,23 @@ public final class CxfMapObjectMappers
         return MapObjectMappers.defaultWithPackage(packageName)
                                .withConverter(muleStringToXmlGregorianCalendarConverter())
                                .withSetterStyle(CXFStyle.STYLE);
+    }
+    
+    /**
+     * Answers a default {@link MapObjectMapper}, based on
+     * {@link MapObjectMappers#defaultWithPackage(String)}, but which adds cxf-specfic configurations:
+     * <ul>
+     *  <li>Sets {@link CXFStyle#STYLE} for its {@link ar.com.zauber.commons.mom.style.SetterStyle}</li>
+     *  <li>Adds a {@link #muleStringToXmlGregorianCalendarConverter()}</li>
+     * </ul>
+     *
+     * @param packageName The name of the mapping package
+     * @return a new cxf default {@link MapObjectMapper} for the given
+     *         packageName
+     */
+    public static MapObjectMapper default_(String packageName)
+    {
+        return defaultWithPackage(packageName).build();
     }
 }
 
