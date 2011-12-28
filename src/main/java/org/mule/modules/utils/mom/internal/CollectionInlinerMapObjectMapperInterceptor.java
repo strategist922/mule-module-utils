@@ -10,15 +10,16 @@
 
 package org.mule.modules.utils.mom.internal;
 
-import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
-
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import net.sf.staccatocommons.defs.Applicable;
 import net.sf.staccatocommons.defs.Applicable2;
 
 import org.apache.commons.lang.StringUtils;
+
+import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
 
 /**
  * {@link MapObjectMapperInterceptor} that allows to wrap lists into
@@ -39,7 +40,7 @@ public class CollectionInlinerMapObjectMapperInterceptor implements MapObjectMap
     }
 
     @SuppressWarnings({ "unchecked", "serial" })
-    protected HashMap wrap(final Object value, final Class<?> type)
+    protected Map wrap(final Object value, final Class<?> type)
     {
         return new HashMap() { {
                 put(propertyName(type), value);

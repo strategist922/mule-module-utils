@@ -20,15 +20,33 @@ import org.mule.modules.utils.date.internal.XmlGregorianCalendarFactory;
  * @author Gaston Ponti
  * @since Dec 22, 2011
  */
-
-public class XmlGregorianCalendars
+public final class XmlGregorianCalendars
 {
+    private XmlGregorianCalendars()
+    {
+    }
     private static XmlGregorianCalendarFactory calendars = XmlGregorianCalendarFactory.newInstance();
-    
-    public static XMLGregorianCalendar toGregorianCalendar(Date date)
+   
+    /**
+     * Answers an {@link XMLGregorianCalendar} for the given {@link Date}
+     * 
+     * @param date nullable
+     * @return an {@link XMLGregorianCalendar} that represents the given date, or
+     *         null, if {@code date} is null
+     */
+    public static XMLGregorianCalendar nullSafeFrom(Date date)
     {
         return calendars.nullSafeToXmlCalendar(date);
     }
+   
+    /**
+     * Answers an {@link XMLGregorianCalendar} for the given {@link Date}
+     * 
+     * @param date not nulls
+     * @return an {@link XMLGregorianCalendar} that represents the given date
+     */
+    public static XMLGregorianCalendar from(Date date)
+    {
+        return calendars.toXmlCalendar(date);
+    }
 }
-
-	

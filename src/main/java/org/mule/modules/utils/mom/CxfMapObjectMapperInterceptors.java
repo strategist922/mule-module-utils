@@ -20,8 +20,12 @@ import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
  *
  * @author flbulgarelli
  */
-public class CxfMapObjectMapperInterceptors
+public final class CxfMapObjectMapperInterceptors
 {
+    private CxfMapObjectMapperInterceptors()
+    {
+    }
+    
     private static final CollectionInlinerMapObjectMapperInterceptor INLINER = new CollectionInlinerMapObjectMapperInterceptor();
     private static final NullifierMapObjectMapperInterceptor NULLIFIER = new NullifierMapObjectMapperInterceptor();
 
