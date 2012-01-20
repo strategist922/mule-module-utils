@@ -19,7 +19,7 @@ import net.sf.staccatocommons.defs.Applicable2;
 
 import org.apache.commons.lang.StringUtils;
 
-import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
+import com.zauberlabs.commons.mom.MapObjectMapperInterceptor;
 
 /**
  * {@link MapObjectMapperInterceptor} that allows to wrap lists into

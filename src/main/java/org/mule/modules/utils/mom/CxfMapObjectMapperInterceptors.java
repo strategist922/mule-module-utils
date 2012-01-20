@@ -13,7 +13,7 @@ package org.mule.modules.utils.mom;
 import org.mule.modules.utils.mom.internal.CollectionInlinerMapObjectMapperInterceptor;
 import org.mule.modules.utils.mom.internal.NullifierMapObjectMapperInterceptor;
 
-import ar.com.zauber.commons.mom.MapObjectMapperInterceptor;
+import com.zauberlabs.commons.mom.MapObjectMapperInterceptor;
 
 /**
  * Interceptors

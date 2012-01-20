@@ -11,9 +11,8 @@
 
 package org.mule.modules.utils;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
 import java.io.IOException;
 

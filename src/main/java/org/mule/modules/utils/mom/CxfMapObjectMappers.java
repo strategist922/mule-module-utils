@@ -12,12 +12,12 @@ package org.mule.modules.utils.mom;
 
 import org.mule.modules.utils.date.DateConventions;
 
-import ar.com.zauber.commons.mom.MapObjectMapper;
-import ar.com.zauber.commons.mom.MapObjectMapperBuilder;
-import ar.com.zauber.commons.mom.MapObjectMappers;
-import ar.com.zauber.commons.mom.converter.TypeConverter;
-import ar.com.zauber.commons.mom.converter.impl.jodatime.StringToXMLGregorianCalendarTypeConverter;
-import ar.com.zauber.commons.mom.style.impl.CXFStyle;
+import com.zauberlabs.commons.mom.MapObjectMapper;
+import com.zauberlabs.commons.mom.MapObjectMapperBuilder;
+import com.zauberlabs.commons.mom.MapObjectMappers;
+import com.zauberlabs.commons.mom.converter.TypeConverter;
+import com.zauberlabs.commons.mom.converter.impl.jodatime.StringToXMLGregorianCalendarTypeConverter;
+import com.zauberlabs.commons.mom.style.impl.CXFStyle;
 
 /**
  * {@link ar.com.zauber.commons.mom.MapObjectMapper}s and

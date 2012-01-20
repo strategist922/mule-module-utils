@@ -10,12 +10,13 @@
 
 package org.mule.modules.utils.mom;
 
-import static org.junit.Assert.assertNull;
-import ar.com.zauber.commons.mom.MapObjectMapper;
+import static org.junit.Assert.*;
 
 import java.util.Collections;
 
 import org.junit.Test;
+
+import com.zauberlabs.commons.mom.MapObjectMapper;
 
 /**
  * Tests for {@link CxfMapObjectMapperInterceptors}

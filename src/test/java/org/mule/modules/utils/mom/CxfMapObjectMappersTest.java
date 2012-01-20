@@ -10,16 +10,14 @@
 
 package org.mule.modules.utils.mom;
 
-import static org.junit.Assert.assertEquals;
-
-import org.mule.modules.utils.mom.CxfMapObjectMappers;
-
-import ar.com.zauber.commons.mom.MapObjectMapper;
+import static org.junit.Assert.*;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.zauberlabs.commons.mom.MapObjectMapper;
 
 /**
  * @author Gaston Ponti
