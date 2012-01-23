@@ -10,7 +10,7 @@
 
 package org.mule.modules.utils.mom;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNull;
 
 import java.util.Collections;
 
@@ -19,14 +19,14 @@ import org.junit.Test;
 import com.zauberlabs.commons.mom.MapObjectMapper;
 
 /**
- * Tests for {@link CxfMapObjectMapperInterceptors}
+ * Tests for {@link JaxbMapObjectMapperInterceptors}
  *
  * @author flbulgarelli
  */
-public class CxfMapObjectMapperInterceptorsUnitTest
+public class JaxbMapObjectMapperInterceptorsUnitTest
 {
 
-    /** Test for {@link CxfMapObjectMapperInterceptors#nullifier()} */
+    /** Test for {@link JaxbMapObjectMapperInterceptors#nullifier()} */
     @Test
     public void testNullifierInterceptorTransformsEmptyMapsIntoNulls()
     {
@@ -35,7 +35,7 @@ public class CxfMapObjectMapperInterceptorsUnitTest
         assertNull(result);
     }
 
-    /** Test for {@link CxfMapObjectMapperInterceptors#nullifier()} */
+    /** Test for {@link JaxbMapObjectMapperInterceptors#nullifier()} */
     @Test
     public void testNullifierInterceptorTransformsEmptyListsIntoNulls()
     {
@@ -45,9 +45,9 @@ public class CxfMapObjectMapperInterceptorsUnitTest
 
     private MapObjectMapper nullifierMom()
     {
-        return CxfMapObjectMappers //
+        return JaxbMapObjectMappers //
         .defaultWithPackage("org.mule.modules.utils.mom")
-            .withInterceptor(CxfMapObjectMapperInterceptors.nullifier())
+            .withInterceptor(JaxbMapObjectMapperInterceptors.nullifier())
             .build();
     }
 

@@ -6,7 +6,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <mom.version>1.4-SNAPSHOT</mom.version>
+    <mom.version>2.0-SNAPSHOT</mom.version>
   </properties>
 
   <scm>
@@ -69,9 +69,8 @@
   <dependencies>
     <dependency>
       <groupId>com.zaubersoftware</groupId>
-      <artifactId>mom</artifactId>
+      <artifactId>commons-mom</artifactId>
       <version>${mom.version}</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>joda-time</groupId>

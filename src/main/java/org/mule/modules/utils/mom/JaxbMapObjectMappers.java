@@ -17,19 +17,19 @@ import com.zauberlabs.commons.mom.MapObjectMapperBuilder;
 import com.zauberlabs.commons.mom.MapObjectMappers;
 import com.zauberlabs.commons.mom.converter.TypeConverter;
 import com.zauberlabs.commons.mom.converter.impl.jodatime.StringToXMLGregorianCalendarTypeConverter;
-import com.zauberlabs.commons.mom.style.impl.CXFStyle;
+import com.zauberlabs.commons.mom.style.impl.JaxbStyle;
 
 /**
  * {@link ar.com.zauber.commons.mom.MapObjectMapper}s and
  * {@link MapObjectMapperBuilder}s configured to be used within a Mule context and
- * with CXF-generated classes
+ * with Jaxb-generated classes
  *
  * @author Gaston Ponti
  * @since Dec 14, 2011
  */
-public final class CxfMapObjectMappers
+public final class JaxbMapObjectMappers
 {
-    private CxfMapObjectMappers()
+    private JaxbMapObjectMappers()
     {
     }
 
@@ -46,33 +46,33 @@ public final class CxfMapObjectMappers
 
     /**
      * Answers a default {@link MapObjectMapperBuilder}, based on
-     * {@link MapObjectMappers#defaultWithPackage(String)}, but which adds cxf-specfic configurations:
+     * {@link MapObjectMappers#defaultWithPackage(String)}, but which adds jaxb-specfic configurations:
      * <ul>
-     *  <li>Sets {@link CXFStyle#STYLE} for its {@link ar.com.zauber.commons.mom.style.SetterStyle}</li>
+     *  <li>Sets {@link JaxbStyle#STYLE} for its {@link ar.com.zauber.commons.mom.style.SetterStyle}</li>
      *  <li>Adds a {@link #muleStringToXmlGregorianCalendarConverter()}</li>
      * </ul>
      *
      * @param packageName The name of the mapping package
-     * @return a new cxf default {@link MapObjectMapperBuilder} for the given
+     * @return a new jaxb default {@link MapObjectMapperBuilder} for the given
      *         packageName
      */
     public static MapObjectMapperBuilder defaultWithPackage(String packageName)
     {
         return MapObjectMappers.defaultWithPackage(packageName)
                                .withConverter(muleStringToXmlGregorianCalendarConverter())
-                               .withSetterStyle(CXFStyle.STYLE);
+                               .withSetterStyle(JaxbStyle.STYLE);
     }
-    
+
     /**
      * Answers a default {@link MapObjectMapper}, based on
-     * {@link MapObjectMappers#defaultWithPackage(String)}, but which adds cxf-specfic configurations:
+     * {@link MapObjectMappers#defaultWithPackage(String)}, but which adds jaxb-specfic configurations:
      * <ul>
-     *  <li>Sets {@link CXFStyle#STYLE} for its {@link ar.com.zauber.commons.mom.style.SetterStyle}</li>
+     *  <li>Sets {@link JaxbStyle#STYLE} for its {@link ar.com.zauber.commons.mom.style.SetterStyle}</li>
      *  <li>Adds a {@link #muleStringToXmlGregorianCalendarConverter()}</li>
      * </ul>
      *
      * @param packageName The name of the mapping package
-     * @return a new cxf default {@link MapObjectMapper} for the given
+     * @return a new jaxb default {@link MapObjectMapper} for the given
      *         packageName
      */
     public static MapObjectMapper default_(String packageName)

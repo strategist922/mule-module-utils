@@ -10,7 +10,7 @@
 
 package org.mule.modules.utils.mom;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
@@ -23,14 +23,14 @@ import com.zauberlabs.commons.mom.MapObjectMapper;
  * @author Gaston Ponti
  * @since Dec 14, 2011
  */
-public class CxfMapObjectMappersTest
+public class JaxbMapObjectMappersTest
 {
     private MapObjectMapper mom;
 
     @Before
     public void initMapperBuilder()
     {
-        mom = CxfMapObjectMappers.defaultWithPackage("workday").build();
+        mom = JaxbMapObjectMappers.defaultWithPackage("workday").build();
     }
 
     @Test

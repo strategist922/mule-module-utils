@@ -20,9 +20,9 @@ import com.zauberlabs.commons.mom.MapObjectMapperInterceptor;
  *
  * @author flbulgarelli
  */
-public final class CxfMapObjectMapperInterceptors
+public final class JaxbMapObjectMapperInterceptors
 {
-    private CxfMapObjectMapperInterceptors()
+    private JaxbMapObjectMapperInterceptors()
     {
     }
     
