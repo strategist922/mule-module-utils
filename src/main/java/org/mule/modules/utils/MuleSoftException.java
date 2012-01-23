@@ -8,11 +8,14 @@
  * LICENSE.txt file.
  */
 
-
 package org.mule.modules.utils;
 
 import org.apache.commons.lang.UnhandledException;
+
 /**
+ * {@link RuntimeException} aimed to make checked exception unchked in the context of
+ * a mule application
+ *
  * @author flbulgarelli
  */
 public class MuleSoftException extends UnhandledException
@@ -23,6 +26,13 @@ public class MuleSoftException extends UnhandledException
         super(cause);
     }
 
+    /**
+     * Converts the given {@link Throwable} into a {@link RuntimeException}, either
+     * by casting it, if possible, or wrapping with a {@link MuleSoftException}
+     *
+     * @param e the throwable to convert
+     * @return a {@link RuntimeException} that is or wraps the given throwable
+     */
     public static RuntimeException soften(Throwable e)
     {
         if (e instanceof RuntimeException)

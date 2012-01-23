@@ -8,16 +8,21 @@
  * LICENSE.txt file.
  */
 
-
 package org.mule.modules.utils;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
 
 import org.junit.Test;
 
+/**
+ * Test for {@link MuleSoftException}
+ *
+ * @author flbulgarelli
+ */
 public class MuleSoftExceptionUnitTest
 {
     @Test

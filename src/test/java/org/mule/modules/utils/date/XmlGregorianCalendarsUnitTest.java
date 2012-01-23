@@ -8,10 +8,10 @@
  * LICENSE.txt file.
  */
 
-
 package org.mule.modules.utils.date;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import java.util.Calendar;
 
@@ -19,6 +19,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.junit.Test;
 
+/**
+ * Test for {@link XmlGregorianCalendarsUnitTest}
+ */
 public class XmlGregorianCalendarsUnitTest
 {
 
