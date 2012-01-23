@@ -6,7 +6,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <mom.version>2.0-SNAPSHOT</mom.version>
+    <mom.version>2.0</mom.version>
   </properties>
 
   <scm>
