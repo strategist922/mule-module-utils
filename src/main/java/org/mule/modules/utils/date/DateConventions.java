@@ -8,7 +8,6 @@
  * LICENSE.txt file.
  */
 
-
 package org.mule.modules.utils.date;
 
 import org.joda.time.format.DateTimeFormatter;
@@ -27,7 +26,14 @@ public final class DateConventions
     }
 
     /**
-     * The Mule date format, iso date time.
+     * The Mule date format. By convention, dates are expressed in ISO date time. For
+     * example, the following date strings are accepted:
+     * <ul>
+     * <li>2012-01-09T12:18:14Z</li>
+     * <li>2012-01-09T12:18:14-02:00</li>
+     * <li>2012-01-09T12:18:14</li>
+     * <li>2012-01-09</li>
+     * </ul>
      *
      * @return A {@link DateTimeFormatter} with mule date format.
      */
