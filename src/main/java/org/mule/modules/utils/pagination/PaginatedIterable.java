@@ -79,7 +79,7 @@ public abstract class PaginatedIterable<T, Page> implements Iterable<T>
      * Answers an iterator for the current page
      *
      * @param page
-     * @return the givne page iterator
+     * @return the given page iterator
      */
     protected abstract Iterator<T> pageIterator(Page page);
 }
